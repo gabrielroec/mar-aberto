@@ -1,0 +1,49 @@
+.conheca-historias-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 2.5rem;
+
+    padding: 4rem 5rem;
+    background: var(--bg-gradient, linear-gradient(90deg, #00739A 0%, #00ADD4 65.00%, #006D94 100%));
+
+    .historias-container{
+        display: flex;
+        gap: 4rem;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .swiper{
+        margin: 0;
+        width: 100%;
+        max-width: 90vw;
+    }
+
+    .swiper-wrapper{
+        display: flex;
+        padding: 10px 0;
+        box-sizing: border-box;
+    }
+    
+    .swiper-slide { 
+        display: flex;
+        align-self: stretch;
+        width: fit-content!important; 
+    }
+}
+
+@media (max-width: 599px) {
+    .conheca-historias-section{
+        padding: 4rem 2rem;
+
+        h1{
+            text-align: center;
+        }
+        
+        .historia-card{
+            margin: 0 2rem; 
+        }
+    }
+}

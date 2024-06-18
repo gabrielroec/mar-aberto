@@ -1,0 +1,101 @@
+.menus {
+  display: flex;
+  align-items: start;
+}
+.profile-wrapper {
+  position: absolute;
+  left: 20%;
+  top: 11%;
+  width: 70%;
+
+  .buttons-wrapper {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    padding: 0 0 35px 0;
+    border-bottom: 1px solid #e9e9e9;
+
+    a {
+      padding: 10px 33px;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      display: block;
+      font-family: "Poppins";
+      font-size: 14px;
+    }
+    a.perfil {
+      background-color: #00739a !important;
+      color: #fff !important;
+    }
+    a.senha {
+      border: 1px solid #e9e9e9 !important;
+      color: #767c88 !important;
+      background-color: #fff !important;
+    }
+  }
+}
+.profile-info-wrapper {
+  border: 1px solid #e9e9e9;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin-top: 35px;
+  .title {
+    font-family: "Poppins";
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 1px solid #e9e9e9;
+    padding: 15px 0 15px 15px;
+  }
+
+  form {
+    padding: 30px 55px 70px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    div {
+      p {
+        color: #767c88;
+        font-family: "Poppins";
+        font-size: 12px;
+        margin-bottom: 4px;
+      }
+      input {
+        padding: 11px 18px;
+        border: 1px solid #e9e9e9;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        width: 100%;
+      }
+      input::placeholder {
+        color: #3e3e3e;
+        font-size: 12px;
+        font-family: "Poppins";
+      }
+    }
+    .adress-fields {
+      display: flex;
+      width: 100%;
+      gap: 20px;
+      .field {
+        width: 100%;
+      }
+    }
+    button {
+      max-width: fit-content;
+      padding: 10px 28px;
+      font-family: "Poppins";
+      background-color: #00739a;
+      margin-top: 40px;
+    }
+  }
+}

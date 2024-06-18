@@ -1,0 +1,16 @@
+@use "../../colors.scss";
+
+.marker{
+    min-width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.625rem;
+    background-color: colors.$base-white;
+
+    div{
+        white-space: nowrap;
+    }
+}

@@ -1,0 +1,39 @@
+.marsocial-home-section{
+    .sobre{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        padding: 4rem;
+        text-align: center;
+    
+        .content{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+    
+            .text-container{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+    
+                gap: 2rem;
+            }
+    
+            img{
+                max-width: 35rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 599px) {
+    .marsocial-home-section{
+        .sobre{
+            padding: 2rem;
+            .content{
+                display: flex;
+                flex-direction: column-reverse;
+            }
+        }
+    }
+}

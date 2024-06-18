@@ -1,0 +1,114 @@
+.menus {
+  display: flex;
+  align-items: start;
+}
+.reservas-wrapper {
+  position: absolute;
+  left: 20%;
+  top: 11%;
+  width: 70%;
+
+  .buttons-wrapper {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    padding: 0 0 35px 0;
+    border-bottom: 1px solid #e9e9e9;
+
+    a {
+      padding: 10px 33px;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      display: block;
+      font-family: "Poppins";
+      font-size: 14px;
+    }
+    a.perfil {
+      background-color: #00739a !important;
+      color: #fff !important;
+    }
+    a.senha {
+      border: 1px solid #e9e9e9 !important;
+      color: #767c88 !important;
+      background-color: #fff !important;
+    }
+  }
+}
+.reservas-info-wrapper {
+  margin-top: 35px;
+
+  .showing-cards {
+    font-size: 14px;
+    color: #3e3e3e;
+    padding: 20px 0 40px 0;
+    font-family: "Poppins";
+  }
+  .reservas-card {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #e9e9e9;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 100%;
+    max-width: fit-content;
+
+    img {
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+    }
+    .reserva-infos {
+      margin-top: 10px;
+
+      .name-card {
+        color: #3e3e3e;
+        font-size: 14px;
+        font-family: "Poppins";
+      }
+      .details-card {
+        color: #767c88;
+        font-size: 12px;
+        font-family: "Poppins";
+        margin-top: 10px;
+      }
+      .qtd-pessoas {
+        font-size: 10px;
+        color: #767c88;
+        margin-top: 10px;
+      }
+      .price-reembolso {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+
+        .price {
+          font-size: 14px;
+          font-weight: 700;
+          color: #3e3e3e;
+          font-family: "Poppins";
+        }
+        .reembolso {
+          color: #ff7d7d;
+          font-size: 10px;
+          font-family: "Poppins";
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+.reservas-card-wrapper {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  flex-wrap: wrap;
+}

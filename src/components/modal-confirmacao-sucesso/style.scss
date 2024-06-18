@@ -1,0 +1,57 @@
+@use "../../colors.scss";
+
+.modal-confirmacao-sucesso{
+    display: grid;
+    grid-template-columns: auto 1px auto;
+    gap: 1.5rem;
+
+    .line{
+        width: 100%;
+        height: 100%;
+        background-color: colors.$grey;
+    }
+
+    .info-geral{
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        max-width: 38rem;
+
+        .header{
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .line{
+            height: 1px;
+        }
+
+        .contato-experiencia{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media (max-width: 599px) {
+    .modal-confirmacao-sucesso{
+        display: flex;
+        flex-direction: column;
+
+        h1{
+            font-size: 1.5rem;
+        }
+
+        .info-geral{
+            div{
+                text-align: center;
+            }
+        }
+
+        .resumo{
+            display: flex;
+            flex-direction: column;
+            gap:0.5rem
+        }
+    }
+}

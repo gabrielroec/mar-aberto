@@ -1,0 +1,26 @@
+@use "../../colors.scss";
+
+.detalhes-experiencia-section{
+    display: grid;
+    grid-template-rows: auto auto;
+    gap: 3rem;
+
+    .mais-procurados-section{
+        h1{
+            padding: 0 1rem;
+        }
+    }
+}
+
+@media (max-width: 599px){
+    .detalhes-experiencia-section{
+        font-size: 0.85rem;
+        gap: 2rem;
+        
+        .mais-procurados-section{
+            h1{
+                padding: 0 1rem;
+            }
+        }
+    }
+}

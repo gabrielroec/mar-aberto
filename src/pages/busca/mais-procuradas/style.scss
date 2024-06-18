@@ -1,0 +1,39 @@
+.mais-procurados-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:2.5rem;
+    
+    padding: 4rem 0;
+
+    .swiper{
+        margin: 0;
+        width: 100%;
+        max-width: 90vw;
+    }
+
+    .swiper-wrapper{
+        display: flex;
+        padding: 10px 0;
+        box-sizing: border-box;
+    }
+    
+    .swiper-slide { 
+        display: flex;
+        align-self: stretch;
+        width: fit-content!important; 
+    }
+}
+
+@media (max-width: 599px) {
+    .mais-procurados-section{
+        h1{
+            text-align: center;
+        }
+
+        .result-card{
+            align-self: stretch;
+            margin: 0 2rem;
+        }
+    }
+}

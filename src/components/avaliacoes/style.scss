@@ -1,0 +1,22 @@
+.avaliacoes-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    
+    padding: 4rem;
+    
+    .avaliacoes-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 4rem;
+        column-gap: 2.5rem;
+    }
+}
+
+@media (max-width: 599px) {
+    .avaliacoes-section{
+        padding: 2rem 2rem;
+    }
+}

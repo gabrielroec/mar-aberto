@@ -1,0 +1,52 @@
+@use "../../colors.scss";
+
+.modal-confirmacao{
+    display: grid;
+    grid-template-columns: 1fr 1px auto;
+    gap: 1.5rem;
+
+    .detalhes-cliente{
+        grid-column: 1/2;
+
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .input{
+            display: flex;
+            flex-direction: column;
+            padding: 0.5rem;
+            gap: 0.3rem;
+            border-radius: 0.625rem;
+            border: 1px solid #777;
+
+            label{
+                font-size: 0.75rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .line{
+        width: 100%;
+        height: 100%;
+        background-color: colors.$grey;
+    }
+
+    .resumo{
+        grid-column: 3/4;
+    }
+}
+
+@media (max-width: 599px) {
+    .modal-confirmacao{
+        display: flex;
+        flex-direction: column;
+
+        .resumo{
+            display: flex;
+            flex-direction: column;
+            gap:0.5rem
+        }
+    }
+}

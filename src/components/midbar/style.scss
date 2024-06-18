@@ -1,0 +1,42 @@
+@use "../../colors.scss";
+
+.midbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 2rem 4rem;
+    gap: 1rem;
+
+    .options-container{
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        gap: 1rem;
+
+        a.option{
+            display: flex;
+            white-space: nowrap;
+            padding: 0.5rem 1.5rem;
+            gap: 0.5rem;
+            border-radius: 0.5rem;
+            border: 1px solid #BAC7CC;
+        }
+    }
+}
+
+@media (max-width: 880px) {
+    .midbar{
+        padding: 2rem;
+        flex-direction: column;
+
+        text-align: center;
+
+        .options-container{
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+        }
+    }
+}

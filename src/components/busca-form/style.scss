@@ -1,0 +1,104 @@
+@use "../../colors.scss";
+
+.form-busca-component{
+    display: flex;
+    flex-direction: column;
+
+    background-color: colors.$verde-agua-light;
+
+    border-radius: 10px;
+    gap: 2.5rem;
+    padding: 1.5rem;
+
+    color: colors.$medium-grey;
+
+    max-width: 35rem;
+    width: 100%;
+    box-sizing: border-box;
+
+    .header, .bottom, .inputs{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+form{
+    .input-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        
+        background-color: colors.$base-white;
+        border-radius: 10px;
+        padding: 0.5rem 1rem;
+        
+        input{
+            width: 100%;
+        }
+    }
+
+    button{
+        background-color: colors.$verde-agua;
+        color: colors.$base-white;
+        padding: 0.75rem 0;
+        border-radius: 10px;
+    }
+
+    .checkbox-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap:1.5rem;
+
+        .checkbox{
+            display: flex;
+            flex: 1;
+            flex-direction: row;
+            align-items: center;
+            gap: 0.5rem;
+
+            background-color: colors.$base-white;
+            border-radius: 10px;
+            max-width: 30%;
+            min-width: fit-content;
+            padding: 0.8rem 1rem;
+
+            label{
+                line-height: 1rem;
+            }
+        }
+    }
+
+    .header{
+        // h1{
+        //     font-family: ClearSansLight;
+        //     font-weight: 300;
+        // }
+    }
+}
+
+@media (max-width: 599px) {
+    form .checkbox-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        .checkbox{
+            width: auto;
+
+            label{
+                font-size: 0.85rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 355px) {
+    form .checkbox-container {
+        .checkbox{
+            max-width: 80%;
+        }
+    }
+}

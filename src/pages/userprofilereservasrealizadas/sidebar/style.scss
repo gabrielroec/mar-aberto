@@ -1,0 +1,51 @@
+.sidebar {
+  padding: 50px 0 100px 0;
+  border-right: 1px solid #e9e9e9;
+  height: 100vh;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .logo {
+    padding-left: 42px;
+  }
+
+  .screens {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 40px;
+    margin-top: 58px;
+
+    a {
+      font-family: "Poppins";
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      cursor: pointer;
+      width: 100%;
+      padding: 20px 0px 20px 42px;
+      img {
+        width: 14px;
+      }
+    }
+  }
+  .active {
+    background-color: #f0f0f0; // Defina a cor desejada para a screen ativa
+  }
+}
+.functions-button {
+  font-family: "Poppins";
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 205px;
+  padding: 20px 0px 20px 42px;
+}
+.profile-screen {
+  background-color: #e6f1f5;
+  color: #006d94;
+}

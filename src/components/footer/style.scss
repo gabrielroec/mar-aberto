@@ -1,0 +1,35 @@
+@use "../../colors.scss";
+
+footer{
+    display: grid;
+    grid-template-rows: auto;
+
+    background-color: colors.$ocean-blue;
+    color: colors.$base-white;
+    padding: 4rem 5rem;
+    max-height: 250px;
+
+    .logo{
+        grid-row: 1;
+        max-width: 3.5rem;
+    }
+
+    .contact-info{
+        grid-row: 1;
+        width: max-content;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-self: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 599px) {
+    footer{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2rem;
+        align-items: center;
+    }
+}

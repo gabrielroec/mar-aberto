@@ -1,0 +1,39 @@
+.resumo{    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 30rem;
+    text-align: center;
+
+    .important-info{
+        padding: 1rem;
+        border-radius: 0.625rem;
+        background: var(--mar-aberto-07, #F2D1B2);
+    }
+    .checkout-info {
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:1.5rem;
+        
+        .info{
+            align-self: stretch;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap:1rem;
+
+            .line{
+                height: 0.0625rem;
+            }
+
+            div{
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}

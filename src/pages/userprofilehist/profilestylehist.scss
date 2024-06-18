@@ -1,0 +1,108 @@
+.menus {
+  display: flex;
+  align-items: start;
+}
+.reservas-hist-wrapper {
+  position: absolute;
+  left: 20%;
+  top: 11%;
+  width: 70%;
+}
+.reservas-info-wrapper {
+  margin-top: 35px;
+
+  .showing-cards {
+    font-size: 14px;
+    color: #3e3e3e;
+    padding: 0px 0 40px 0;
+    font-family: "Poppins";
+  }
+  .reservas-hist-card {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #e9e9e9;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 100%;
+    max-width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    img {
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      width: 110px;
+      height: 134px;
+      object-fit: cover;
+    }
+    .reserva-infos {
+      margin-top: 10px;
+
+      .name-card {
+        color: #3e3e3e;
+        font-size: 14px;
+        font-family: "Poppins";
+      }
+      .details-card {
+        color: #767c88;
+        font-size: 12px;
+        font-family: "Poppins";
+        margin-top: 10px;
+      }
+      .qtd-pessoas {
+        font-size: 12px;
+        color: #767c88;
+        margin-top: 10px;
+      }
+      .price-reembolso {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0;
+        gap: 20px;
+
+        .price {
+          font-size: 14px;
+          font-weight: 700;
+          color: #3e3e3e;
+          font-family: "Poppins";
+          display: flex;
+          flex-direction: column;
+
+          span {
+            color: #848484;
+            font-weight: 200;
+            font-family: "Poppins";
+            font-size: 12px;
+          }
+        }
+        .fazer-reserva {
+          color: #fff;
+          font-size: 12px;
+          font-family: "Poppins";
+          cursor: pointer;
+          padding: 7px 21px;
+          background-color: #006d94;
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+        }
+      }
+    }
+  }
+}
+.reservas-hist-card-wrapper {
+  display: flex;
+  align-items: start;
+  gap: 20px;
+  flex-wrap: wrap;
+}

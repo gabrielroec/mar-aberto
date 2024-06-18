@@ -1,0 +1,78 @@
+@use "./colors.scss";
+@import url("https://fonts.cdnfonts.com/css/poppins");
+
+@font-face {
+  font-family: ClearSans;
+  src: url("./fonts/clear-sans/TTF/ClearSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: ClearSansLight;
+  src: url("./fonts/clear-sans/TTF/ClearSans-Light.ttf");
+}
+
+div#root {
+  min-height: 100vh;
+}
+
+* {
+  font-size: 1rem;
+  font-family: ClearSans;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.small {
+  font-size: 0.75rem;
+}
+
+.light {
+  font-family: ClearSansLight;
+  font-weight: 300;
+}
+
+a {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.blue-button {
+  max-width: 100%;
+  padding: 1rem;
+  border-radius: 0.625rem;
+
+  background-color: colors.$blue;
+  color: colors.$base-white;
+  text-align: center;
+}
+
+.rodal-dialog {
+  padding: 2rem !important;
+}
+
+@media (max-width: 599px) {
+  * {
+    font-size: 0.85rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+}

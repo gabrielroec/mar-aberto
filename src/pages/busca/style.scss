@@ -1,0 +1,51 @@
+@use '../../colors.scss';
+
+.busca-section{
+    display: grid;
+    grid-template-rows: auto auto auto;
+
+    div{
+        box-sizing: border-box;
+    }
+
+    form{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        max-width: 100%;
+
+        background-color: colors.$verde-agua-light;
+        padding: 2rem 4rem;
+
+        .left-container, .right-container{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .checkbox-container{
+            gap: 3%;
+            justify-content: space-between;
+    
+            .checkbox{
+                width: 30%;
+            }
+        }
+    }
+}
+
+@media (max-width: 599px) {
+    .busca-section{
+        form{
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem;
+
+            .checkbox-container{
+                flex-wrap: wrap;
+                justify-content: center;
+                gap:1rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,73 @@
+@use '../../../colors.scss';
+
+.ratings-section{
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
+    text-align: center;
+
+    background: var(--bg-gradient, linear-gradient(90deg, #00739A 0%, #00ADD4 65.00%, #006D94 100%));
+    color: colors.$base-white;
+    box-sizing: border-box;
+    padding: 4rem;
+
+    .carousel{
+        width: 100%;
+    }
+
+    .big{
+        font-size: 2rem;;
+    }
+
+    b{
+        color: colors.$yellow-sand;
+    }
+
+    a{
+        width: 100%;
+        padding: 1rem;
+        max-width: 18.75rem;
+        border-radius: 0.625rem;
+
+        color: colors.$black;
+        background-color: colors.$base-white;
+        box-sizing: border-box;
+    }
+
+    .swiper{
+        margin: 0;
+        width: 100%;
+        max-width: 90vw;
+    }
+
+    .swiper-wrapper{
+        display: flex;
+        padding: 10px 0;
+        box-sizing: border-box;
+    }
+    
+    .swiper-slide { 
+        display: flex;
+        align-self: stretch;
+        width: fit-content!important; 
+    }
+}
+
+@media (max-width: 599px) {
+    .ratings-section{
+        padding: 2rem 0;
+
+        h1, h2{
+            padding: 0 2rem;
+        }
+
+        .big{
+            font-size: 1.8rem;;
+        }
+
+        .card{
+            margin: 0 2rem; 
+        }
+    }
+}
